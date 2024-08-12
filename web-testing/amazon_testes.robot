@@ -1,3 +1,12 @@
+*** Settings ***
+Documentation    Essa suite testa o site da Amazon.com.br
+Resource         amazon_resources.robot
+Test Setup       Abrir o navegador
+Test Teardown    Fechar o navegador
+
+#Suite Setup
+#Suite Teardown
+
 *** Test Cases ***
 Caso de Teste 01 - Acesso ao menu "Eletrônicos"
     [Documentation]  Esse teste verifica o menu eletrônicos do site da Amazon.com.br
